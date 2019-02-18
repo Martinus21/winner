@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Winner</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" type="text/css" href="jquery.lightbox-0.5.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.innerfade.js"></script>
+	<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+
+	<script type="text/javascript">
+		$ (document).ready(
+			function(){
+
+				$('#slider').innerfade({
+					speed: 'slow',
+					timeout: 4000,
+					type: 'sequence',
+					containerheight: '430px'
+				});
+	
+				$('#gallery a').lightBox();
+		
+			}
+		);
+	</script>
+
+</head>
+<body>
+	<div id="wrapper">
+
+		<div id="header">
+			<div id="headerLeft">
+				<img src="images/logo.png">		
+			</div><!--End of headerLeft-->
+		
+			<div id="headerRight">
+				<table>
+					<tr>
+						<td>Username</td>
+						<td>Password</td>
+						<td></td>
+					</tr>
+					<tr>
+						<form>
+							<td><input type="text" id="username" name="username"></td>
+							<td><input type="password" id="pass" name="pass"></td>
+							<td><input type="submit" value="Login"></td>
+						</form>
+					</tr>
+				</table>
+			</div><!--End of headerRight-->
+		</div><!--End of HEADER-->
+	
+		<div id="menu">
+
+			<ul>
+				<li class="white borderRadiusLeft"><a href="index2.html">Home</a></li>
+				<li><a href="#">Blogs</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li class="borderRadiusRight"><a href="#">Contact Us</a></li>
+			</ul>
+
+		</div><!--End of MENU-->
+	
+		<div id="content">
+			<div id="slider">
+				<div>
+					<img src="images/slider1.jpg" class="sliderBorder">
+				</div>
+				<div>
+					<img src="images/slider2.jpg" class="sliderBorder">
+				</div>
+				<div>
+					<img src="images/slider3.jpg" class="sliderBorder">
+				</div>
+			</div><!--End of slider-->
+			<img src="images/sliderbox_bg.png" class="shadow">
+			<div id="search">
+				<form>
+					<input type="text" id="searchbox">
+					<input type="submit" value="Search">
+				</form>
+			</div><!--End of search-->
+
+			<h2 class="galleryH2">My Gallery</h2>
+			<div id="gallery">
+				<ul>
+					<li>
+						<a href="gallery/1.jpg">
+							<img src="gallery/1_thumb.jpg" width="120" height="160">
+						</a>
+					</li>
+					<li>
+						<a href="gallery/2.jpg">
+							<img src="gallery/2_thumb.jpg" width="120" height="160">
+						</a>
+					</li>
+					<li>
+						<a href="gallery/3.jpg">
+							<img src="gallery/3_thumb.jpg" width="120" height="160">
+						</a>
+					</li>
+					<li>
+						<a href="gallery/4.jpg">
+							<img src="gallery/4_thumb.jpg" width="120" height="160">
+						</a>
+					</li>
+					<li>
+						<a href="gallery/5.jpg">
+							<img src="gallery/5_thumb.jpg" width="120" height="160">
+						</a>
+					</li>
+					<li>
+						<a href="gallery/6.jpg">
+							<img src="gallery/6_thumb.jpg" width="120" height="160">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div><!--End of CONTENT-->
+	
+		<div id="footer">
+			Copyright &copy; 2017 | By Martinus Richard
+		</div><!--End of FOOTER-->
+
+	</div><!--End of WRAPPER-->
+</body>
+</html>
